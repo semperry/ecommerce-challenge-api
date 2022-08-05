@@ -17,8 +17,8 @@ mongoose
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/v1", productRoutes);
 app.use("/api/v1/cart", cartRoutes);
-app.use("/api/v1/product", productRoutes);
 
 app.listen(PORT, () => {
 	console.log(`Shop API running on port ${PORT}`);
