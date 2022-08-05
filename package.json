@@ -1,0 +1,21 @@
+{
+  "name": "bobs-shop-api",
+  "version": "0.1.0",
+  "description": "ecommerce api and controller for bobs shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Ryan Curtis <ryan.curtis88@gmail.com> (https://github.com/semperry)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
