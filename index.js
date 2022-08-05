@@ -3,6 +3,9 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+const cartRoutes = require("./routes/cartRoutes");
+const productRoutes = require("./routes/productRoutes");
+
 const PORT = process.env.PORT || 4000;
 const app = express();
 
@@ -13,6 +16,9 @@ mongoose
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/api/v1/cart", cartRoutes);
+app.use("/api/v1/product", productRoutes);
 
 app.listen(PORT, () => {
 	console.log(`Shop API running on port ${PORT}`);
